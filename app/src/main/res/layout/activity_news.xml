@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="News"
+            android:textSize="23sp"
+            android:textColor="@color/title_text_color"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="16dp" />
+
+
+
+    <HorizontalScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="23dp"
+            android:orientation="horizontal">
+
+        <FrameLayout
+            android:background="@drawable/bg_first"
+            android:layout_width="146dp"
+            android:layout_height="68dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:textSize="12sp"
+                android:text="Short news title will be here"
+                android:textColor="@color/card_text_color"
+                android:layout_margin="20dp"
+                android:fontFamily="sans-serif-medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+            <FrameLayout
+                android:background="@drawable/bg_second"
+                android:layout_width="146dp"
+                android:layout_height="68dp"
+                android:layout_marginHorizontal="5dp">
+
+                <TextView
+                    android:textSize="12sp"
+                    android:text="Short news title will be here"
+                    android:textColor="@color/card_text_color"
+                    android:layout_margin="20dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="HardcodedText" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:background="@drawable/bg_third"
+                android:layout_width="146dp"
+                android:layout_height="68dp"
+                android:layout_marginHorizontal="5dp">
+
+                <TextView
+                    android:textSize="12sp"
+                    android:text="Short news title will be here"
+                    android:textColor="@color/card_text_color"
+                    android:layout_margin="20dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="HardcodedText" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+        <TextView
+            android:text="Daily Tasks:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:textColor="@color/title_text_color"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="normal"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="38dp" />
+
+    <HorizontalScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="23dp">
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="#F6F5FB"
+                app:cardElevation="0dp"
+                android:layout_width="94dp"
+                android:layout_height="86dp"
+                android:layout_marginHorizontal="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:textSize="10sp"
+                        android:fontFamily="sans-serif"
+                        android:textColor="#61598B"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:text="Daily astromeditation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/text_view_task_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentStart="true"
+                        android:text="3"
+                        android:textColor="#403572"
+                        android:textSize="24sp"
+                        />
+
+                    <ImageView
+                        android:layout_toEndOf="@id/text_view_task_1"
+                        android:layout_alignTop="@id/text_view_task_1"
+                        app:tint="#403572"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@drawable/ic_task" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="#FFF4F4"
+                app:cardElevation="0dp"
+                android:layout_width="94dp"
+                android:layout_height="86dp"
+                android:layout_marginHorizontal="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:textSize="10sp"
+                        android:fontFamily="sans-serif"
+                        android:textColor="#FF3726"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:text="Daily astromeditation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/text_view_task_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:text="1"
+                        android:textColor="#FF5648"
+                        android:textSize="24sp" />
+
+                    <ImageView
+                        android:layout_toEndOf="@id/text_view_task_2"
+                        android:layout_alignTop="@id/text_view_task_2"
+                        app:tint="#FF5648"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@drawable/ic_task" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="#F5F9F9"
+                app:cardElevation="0dp"
+                android:layout_width="94dp"
+                android:layout_height="86dp"
+                android:layout_marginHorizontal="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:textSize="10sp"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/daily_task_color_3"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:text="Daily mantra"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/text_view_task_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentStart="true"
+                        android:text="2"
+                        android:textColor="@color/daily_task_color_3"
+                        android:textSize="24sp"
+                        />
+
+                    <ImageView
+                        android:layout_toEndOf="@id/text_view_task_3"
+                        android:layout_alignTop="@id/text_view_task_3"
+                        app:tint="@color/daily_task_color_3"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@drawable/ic_task" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+        <TextView
+            android:textSize="18sp"
+            android:layout_marginTop="14dp"
+            android:layout_marginStart="28dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your overall progress is 60%"/>
+
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="28dp"
+            android:layout_marginTop="12dp"
+            android:max="100"
+            android:progress="50"
+            app:trackCornerRadius="4dp"
+            app:trackThickness="4dp">
+
+
+        </com.google.android.material.progressindicator.LinearProgressIndicator>
+
+
+        <LinearLayout
+            android:layout_marginTop="33dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:scrollbars="none"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginHorizontal="28dp"
+                app:cardCornerRadius="14dp"
+                app:cardBackgroundColor="#F6F5FB"
+                android:layout_marginVertical="5dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+
+                    <ImageView
+                        android:id="@+id/img_calendar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="19dp"
+                        android:layout_marginTop="22dp"
+                        android:src="@drawable/calendar_1"
+                        app:tint="#403572" />
+
+                    <TextView
+                        android:id="@+id/text_how_are_u"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="9dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_toEndOf="@id/img_calendar"
+                        android:text="How was your day?"
+                        android:textColor="#403572"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="9dp"
+                        android:layout_marginTop="52dp"
+                        android:layout_marginEnd="38dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_toEndOf="@id/img_calendar"
+                        android:text="Lorem ipsum dolor sit amet, consectetur
+                                      adipscing elit. Ut vel odio en urna ultrice..."
+                        android:textColor="#403572"
+                        android:textSize="12sp"
+                        android:fontFamily="sans-serif-light"
+                        android:textStyle="normal"/>
+
+                    <ImageView
+                        android:src="@drawable/svg_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="44dp"
+                        android:layout_marginEnd="14dp"/>
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginHorizontal="28dp"
+                android:layout_marginVertical="5dp"
+                app:cardCornerRadius="14dp"
+                app:cardBackgroundColor="#FFF4F4"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+
+                    <ImageView
+                        android:id="@+id/img_calendar_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="19dp"
+                        android:layout_marginTop="22dp"
+                        android:src="@drawable/clock"
+                        app:tint="#FF5648" />
+
+                    <TextView
+                        android:id="@+id/text_how_was"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="9dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_toEndOf="@id/img_calendar_2"
+                        android:text="How was your day?"
+                        android:textColor="#FF5648"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="9dp"
+                        android:layout_marginTop="52dp"
+                        android:layout_marginEnd="38dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_toEndOf="@id/img_calendar_2"
+                        android:text="Lorem ipsum dolor sit amet, consectetur
+                                      adipscing elit. Ut vel odio en urna ultrice..."
+                        android:textColor="#A27A7A"
+                        android:textSize="12sp"
+                        android:fontFamily="sans-serif-light"
+                        android:textStyle="normal"/>
+
+                    <ImageView
+                        android:src="@drawable/svg_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="44dp"
+                        android:layout_marginEnd="14dp"
+                        app:tint="#FF5648"/>
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
