@@ -18,6 +18,10 @@
             android:exported="false" />
 
         <activity
+            android:name="com.firuz.ProfileActivity"
+            android:exported="false" />
+
+        <activity
             android:name="com.firuz.NewsActivity"
             android:exported="true">
             <intent-filter>
