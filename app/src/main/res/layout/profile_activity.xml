@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:src="@drawable/profile_img"
+            android:layout_width="134dp"
+            android:layout_height="115dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="28dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42dp"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:text="Angelica Jackson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/profile_color"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif-black"
+                />
+
+            <TextView
+                android:text="Analyzer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="14sp"
+                android:textColor="@color/profile_color"
+                android:textStyle="normal"
+                android:fontFamily="sans-serif-light"
+                />
+
+            <TextView
+                android:id="@+id/change_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:linksClickable="true"
+                android:layout_marginTop="9dp"
+                android:text="@string/change_profile"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:text="Strong side:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:layout_marginTop="28dp"
+        android:layout_marginStart="28dp"
+        android:textColor="@color/profile_color" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="7dp">
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="#F6F5FB"
+            app:cardElevation="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="3dp">
+
+            <TextView
+                android:text="Analytics"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/profile_StrongSide_color"
+                android:paddingHorizontal="9dp"
+                android:paddingVertical="8dp"
+                android:background="@color/profile_strondSide_bg_color"
+                android:textSize="13sp"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="#F6F5FB"
+            app:cardElevation="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="3dp">
+
+            <TextView
+                android:text="Perfectionism"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/profile_StrongSide_color"
+                android:paddingHorizontal="9dp"
+                android:paddingVertical="8dp"
+                android:background="@color/profile_strondSide_bg_color"
+                android:textSize="13sp"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="#F6F5FB"
+            app:cardElevation="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="3dp">
+
+            <TextView
+                android:text="Analytics"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/profile_StrongSide_color"
+                android:paddingHorizontal="9dp"
+                android:paddingVertical="8dp"
+                android:background="@color/profile_strondSide_bg_color"
+                android:textSize="13sp"/>
+        </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:text="Weak side:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:layout_marginTop="19dp"
+        android:layout_marginStart="28dp"
+        android:textColor="@color/profile_color" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="7dp">
+
+
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="#FFF4F4"
+            app:cardElevation="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="3dp">
+
+            <TextView
+                android:text="Perfectionism"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#FF7E73"
+                android:paddingHorizontal="9dp"
+                android:paddingVertical="8dp"
+                android:textSize="13sp"/>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="#FFF4F4"
+            app:cardElevation="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="3dp">
+
+            <TextView
+                android:text="Analytics"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#FF7E73"
+                android:paddingHorizontal="9dp"
+                android:paddingVertical="8dp"
+                android:textSize="13sp"/>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="38dp"
+        android:textSize="23sp"
+        android:text="My Reports:"
+        android:textColor="@color/profile_color"
+        android:fontFamily="sans-serif-light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="2"
+        android:orientation="vertical"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginTop="14dp">
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="16dp"
+            app:cardBackgroundColor="#F6F5FB"
+            app:cardElevation="0dp"
+            android:layout_width="147dp"
+            android:layout_height="123dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="19dp"
+                    android:src="@drawable/ic_user"
+                    app:tint="#3D3270" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="19dp"
+                    android:src="@drawable/ic_vector" />
+
+                <TextView
+                    android:text="Astro-psychological report"
+                    android:layout_width="109dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="19dp"
+                    android:textSize="12sp"
+                    android:layout_marginTop="44dp"
+                    android:textColor="@color/profile_color" />
+
+                <TextView
+                    android:text="Some short description of this type of report."
+                    android:layout_width="109dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="19dp"
+                    android:textSize="10sp"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_marginTop="81dp"
+                    android:textColor="@color/profile_color" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="16dp"
+            app:cardBackgroundColor="#FFF4F4"
+            app:cardElevation="0dp"
+            android:layout_width="147dp"
+            android:layout_height="122dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/ic_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:tint="#FF5D50"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="19dp"/>
+
+                <ImageView
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="19dp"
+                    app:tint="#FF5D50"
+                    android:src="@drawable/ic_vector"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Daily Prediction"
+                    android:layout_width="109dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="19dp"
+                    android:textSize="12sp"
+                    android:layout_marginTop="44dp"
+                    android:textColor="#FF5648" />
+
+                <TextView
+                    android:text="Some short description of this type of report."
+                    android:layout_width="109dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="19dp"
+                    android:textSize="10sp"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_marginTop="67dp"
+                    android:textColor="#A27A7A" />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="16dp"
+            app:cardBackgroundColor="#F5F9F9"
+            app:cardElevation="0dp"
+            android:layout_width="147dp"
+            android:layout_height="122dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/ic_calendar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:tint="#479696"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="19dp"/>
+
+                <ImageView
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="19dp"
+                    android:src="@drawable/ic_vector"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:tint="#479696"/>
+
+                <TextView
+                    android:text="Monthly prediction report"
+                    android:layout_width="109dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="19dp"
+                    android:textSize="12sp"
+                    android:layout_marginTop="44dp"
+                    android:textColor="#479696" />
+
+                <TextView
+                    android:layout_width="109dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="19dp"
+                    android:layout_marginTop="81dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Some short description of this type of report."
+                    android:textColor="#8DAEAE"
+                    android:textSize="10sp" />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="147dp"
+            android:layout_height="122dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            app:cardBackgroundColor="#FDF9FB"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/profile_ic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="19dp"
+                    android:src="@drawable/ic_heart" />
+
+                <TextView
+                    android:id="@+id/profile_report_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="19dp"
+                    android:layout_marginTop="44dp"
+                    android:text="Love report"
+                    android:textColor="#C93F8D"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="19dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Some short description of this type of report."
+                    android:textColor="#E791BE"
+                    android:textSize="10sp"
+                    android:layout_marginTop="67dp"/>
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+
+
+</LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>
