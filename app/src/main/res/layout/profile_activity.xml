@@ -14,12 +14,33 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageView
-            android:src="@drawable/profile_img"
+        <LinearLayout
             android:layout_width="134dp"
             android:layout_height="115dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginStart="28dp" />
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="16dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:layout_width="115dp"
+                    android:layout_height="115dp"
+                    android:src="@drawable/profileImg" />
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:src="@drawable/ic_horoscope" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
 
         <LinearLayout
             android:orientation="vertical"
@@ -399,34 +420,33 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:id="@+id/profile_ic"
+                    android:src="@drawable/ic_heart"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    app:tint="#C93F8D"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_marginStart="19dp"
-                    android:layout_marginTop="19dp"
-                    android:src="@drawable/ic_heart" />
+                    android:layout_marginTop="19dp"/>
 
                 <TextView
-                    android:id="@+id/profile_report_text"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="19dp"
-                    android:layout_marginTop="44dp"
                     android:text="Love report"
-                    android:textColor="#C93F8D"
-                    android:textSize="12sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="109dp"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="19dp"
-                    android:fontFamily="sans-serif-light"
+                    android:textSize="12sp"
+                    android:layout_marginTop="44dp"
+                    android:textColor="#C93F8D" />
+
+                <TextView
                     android:text="Some short description of this type of report."
-                    android:textColor="#E791BE"
+                    android:layout_width="109dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="19dp"
                     android:textSize="10sp"
-                    android:layout_marginTop="67dp"/>
+                    android:fontFamily="sans-serif-light"
+                    android:layout_marginTop="67dp"
+                    android:textColor="#E791BE" />
 
 
             </RelativeLayout>
