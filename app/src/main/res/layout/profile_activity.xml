@@ -2,7 +2,8 @@
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
 <LinearLayout
     android:orientation="vertical"
@@ -22,12 +23,12 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" >
+                android:layout_height="match_parent">
 
                 <ImageView
                     android:layout_width="115dp"
                     android:layout_height="115dp"
-                    android:src="@drawable/profileImg" />
+                    android:src="@drawable/profile__img" />
 
                 <ImageView
                     android:layout_centerVertical="true"
@@ -93,72 +94,18 @@
         android:textColor="@color/profile_color" />
 
 
-    <LinearLayout
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginHorizontal="23dp"
+        android:layout_marginTop="7dp"
+        android:id="@+id/strong_side_recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginStart="23dp"
-        android:layout_marginTop="7dp">
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/strong_side_card_item"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="horizontal"
+        tools:itemCount="3">
 
-        <androidx.cardview.widget.CardView
-            app:cardCornerRadius="10dp"
-            app:cardBackgroundColor="#F6F5FB"
-            app:cardElevation="0dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="3dp">
-
-            <TextView
-                android:text="Analytics"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textColor="@color/profile_StrongSide_color"
-                android:paddingHorizontal="9dp"
-                android:paddingVertical="8dp"
-                android:background="@color/profile_strondSide_bg_color"
-                android:textSize="13sp"/>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            app:cardCornerRadius="10dp"
-            app:cardBackgroundColor="#F6F5FB"
-            app:cardElevation="0dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="3dp">
-
-            <TextView
-                android:text="Perfectionism"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textColor="@color/profile_StrongSide_color"
-                android:paddingHorizontal="9dp"
-                android:paddingVertical="8dp"
-                android:background="@color/profile_strondSide_bg_color"
-                android:textSize="13sp"/>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            app:cardCornerRadius="10dp"
-            app:cardBackgroundColor="#F6F5FB"
-            app:cardElevation="0dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="3dp">
-
-            <TextView
-                android:text="Analytics"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textColor="@color/profile_StrongSide_color"
-                android:paddingHorizontal="9dp"
-                android:paddingVertical="8dp"
-                android:background="@color/profile_strondSide_bg_color"
-                android:textSize="13sp"/>
-        </androidx.cardview.widget.CardView>
-
-
-
-    </LinearLayout>
+    </androidx.recyclerview.widget.RecyclerView>
 
     <TextView
         android:text="Weak side:"
@@ -170,51 +117,23 @@
         android:textColor="@color/profile_color" />
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="23dp"
+        android:layout_marginHorizontal="23dp"
         android:layout_marginTop="7dp">
 
 
 
-        <androidx.cardview.widget.CardView
-            app:cardCornerRadius="10dp"
-            app:cardBackgroundColor="#FFF4F4"
-            app:cardElevation="0dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="3dp">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/week_side_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="3"
+            tools:listitem="@layout/week_side_card_item">
 
-            <TextView
-                android:text="Perfectionism"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textColor="#FF7E73"
-                android:paddingHorizontal="9dp"
-                android:paddingVertical="8dp"
-                android:textSize="13sp"/>
-        </androidx.cardview.widget.CardView>
-
-
-
-
-        <androidx.cardview.widget.CardView
-            app:cardCornerRadius="10dp"
-            app:cardBackgroundColor="#FFF4F4"
-            app:cardElevation="0dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="3dp">
-
-            <TextView
-                android:text="Analytics"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textColor="#FF7E73"
-                android:paddingHorizontal="9dp"
-                android:paddingVertical="8dp"
-                android:textSize="13sp"/>
-        </androidx.cardview.widget.CardView>
+        </androidx.recyclerview.widget.RecyclerView>
 
 
     </LinearLayout>
