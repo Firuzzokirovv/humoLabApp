@@ -1,6 +1,4 @@
 <resources>
-    <string name="app_name">humoLabApp</string>
-    <string name="news">News</string>
-    <string name="angelica_jackson">Angelica Jackson</string>
+    <string name="app_name">HumoLabApp</string>
     <string name="change_profile"><a href="" color="#595085">Change profile</a></string>
 </resources>
