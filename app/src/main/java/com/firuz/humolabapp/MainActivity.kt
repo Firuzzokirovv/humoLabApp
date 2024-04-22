@@ -8,7 +8,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.firuz.second.second_activity
 
-class ainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
     private var buttonNewActivity: Button? = null
     private var editTextView1: EditText? = null
     private var editTextView2: EditText? = null

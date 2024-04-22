@@ -27,7 +27,7 @@
                 <ImageView
                     android:layout_width="115dp"
                     android:layout_height="115dp"
-                    android:src="@drawable/profileImg" />
+                    android:src="@drawable/profile__img" />
 
                 <ImageView
                     android:layout_centerVertical="true"
