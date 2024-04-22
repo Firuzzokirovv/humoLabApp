@@ -13,37 +13,32 @@
         android:theme="@style/Theme.HumoLabApp"
         tools:targetApi="31">
 
-        <activity
-            android:name="com.firuz.mainScreenHumoTransfer.MainScreenHumTransferActivity"
-            android:exported="false">
-        </activity>
-
 
         <activity
             android:name="com.firuz.second.second_activity"
             android:exported="false" />
 
-
         <activity
             android:name="com.firuz.ProfileActivity"
-            android:exported="false">
-
-        </activity>
-
-
-        <activity
-            android:name="com.firuz.NewsActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
 
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.firuz.NewsActivity"
+            android:exported="false">
+
+        </activity>
+
+
+        <activity
+            android:name="com.firuz.humolabapp.MainActivity"
             android:exported="false" />
 
 
