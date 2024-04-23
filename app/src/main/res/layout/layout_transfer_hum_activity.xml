@@ -37,13 +37,14 @@
         android:layout_marginTop="12dp"
         app:cardCornerRadius="16dp">
 
-        <androidx.appcompat.widget.SearchView
+        <SearchView
             android:id="@+id/searchView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
-            app:iconifiedByDefault="false"
-            android:queryHint="Search Country..." />
+            android:queryHint="Search Country..."
+            app:iconifiedByDefault="false"/>
+
     </androidx.cardview.widget.CardView>
 
     <com.google.android.material.card.MaterialCardView
@@ -54,44 +55,18 @@
         android:background="@color/white"
         app:cardCornerRadius="16dp">
 
-        <ScrollView
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
             android:scrollbars="none"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/layout_hum_transfer_card_item"
+            tools:itemCount="4"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="12dp">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="16dp"
-                android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:layout_marginBottom="8dp">
-
-                    <ImageView
-                        android:src="@drawable/flag_rus"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginVertical="8dp"
-                        android:layout_marginEnd="16dp"/>
-
-                    <TextView
-                        android:text="Россия"
-                        android:layout_width="match_parent"
-                        android:layout_marginEnd="8dp"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:textColor="#171717"
-                        android:layout_gravity="center"
-                        android:layout_height="wrap_content" />
-                </LinearLayout>
-
-            </LinearLayout>
-
-        </ScrollView>
+        </androidx.recyclerview.widget.RecyclerView>
 
     </com.google.android.material.card.MaterialCardView>
 
