@@ -4,20 +4,20 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <androidx.cardview.widget.CardView
+        android:layout_marginTop="8dp"
         app:cardBackgroundColor="#F6F5FB"
         app:cardCornerRadius="16dp"
         app:cardElevation="0dp"
         android:layout_width="147dp"
         android:layout_height="123dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp">
+        android:layout_marginHorizontal="5dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/imageId"
+                android:id="@+id/my_report_image"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
@@ -28,7 +28,7 @@
                 app:tint="#3D3270" />
 
             <ImageView
-                android:id="@+id/imageIC"
+                android:id="@+id/my_report_icon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
@@ -37,7 +37,7 @@
                 android:src="@drawable/ic_vector" />
 
             <TextView
-                android:id="@+id/titleTextView"
+                android:id="@+id/my_report_title"
                 android:text="Astro-psychological report"
                 android:layout_width="109dp"
                 android:layout_height="wrap_content"
@@ -47,7 +47,7 @@
                 android:textColor="@color/profile_color" />
 
             <TextView
-                android:id="@+id/subTitleTextView"
+                android:id="@+id/my_report_subtitle"
                 android:text="Some short description of this type of report."
                 android:layout_width="109dp"
                 android:layout_height="wrap_content"
