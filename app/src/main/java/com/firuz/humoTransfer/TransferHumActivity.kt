@@ -16,7 +16,7 @@ class TransferHumActivity : AppCompatActivity() {
     private var searchView: SearchView? = null
     private var recyclerView: RecyclerView? = null
     private var adapter: HumTransferAdapter? = null
-    private var countryModel = listOf(
+    private var countryModel = arrayListOf(
         ItemData("Россия",R.drawable.flag_rus),
         ItemData("Таджикистан",R.drawable.flag_taj),
         ItemData("Узбекистан", R.drawable.flag_uzb),
@@ -34,11 +34,10 @@ class TransferHumActivity : AppCompatActivity() {
 
         searchView = findViewById(R.id.searchView)
         recyclerView = findViewById(R.id.recyclerView)
-        recyclerView?.setHasFixedSize(true)
         recyclerView?.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         recyclerView?.adapter = HumTransferAdapter(countryModel)
 
-        searchView?.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+        searchView?.setOnQueryTextListener(object: SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {
                 return false
             }
@@ -51,19 +50,20 @@ class TransferHumActivity : AppCompatActivity() {
         })
     }
 
-private fun filterList(query: String?) {
-    if (query != null){
-        val filteredList = ArrayList<ItemData>()
-        for(i in countryModel){
-            if(i.countryName.lowercase(Locale.ROOT).contains(query)){
-                filteredList.add(i)
+    private fun filterList(query: String?) {
+        if (query != null){
+            val filteredList = ArrayList<ItemData>()
+            for(i in countryModel){
+                if(i.countryName.lowercase(Locale.ROOT).contains(query)){
+                    filteredList.add(i)
+                }
             }
-        }
-        if(filteredList.isEmpty()){
-            Toast.makeText(this, "Ничего не найдено", Toast.LENGTH_SHORT).show()
-        }else {
-            adapter?.setFilteredList(filteredList)
+            if(filteredList.isNotEmpty()){
+                adapter?.setFilteredList(filteredList)
+            }else {
+                Toast.makeText(this, "Ничего не найдено", Toast.LENGTH_SHORT).show()
             }
         }
     }
+
 }

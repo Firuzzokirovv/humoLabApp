@@ -37,6 +37,4 @@ class HumTransferAdapter(private var itemData: List<ItemData>) : RecyclerView.Ad
         }
     }
 
-    companion object
-
 }
