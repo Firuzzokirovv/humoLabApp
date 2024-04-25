@@ -19,7 +19,7 @@
             android:exported="false" />
 
         <activity
-            android:name="com.firuz.ProfileActivity"
+            android:name="com.firuz.profile.ProfileActivity"
             android:exported="false">
 
         </activity>

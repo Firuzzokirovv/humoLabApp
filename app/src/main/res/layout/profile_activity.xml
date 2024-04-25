@@ -154,9 +154,10 @@
         android:layout_height="wrap_content"
         tools:listitem="@layout/my_report_card_item"
         android:orientation="vertical"
+        tools:itemCount="2"
         app:spanCount="2"
-        tools:itemCount="4"
-        android:layout_marginHorizontal="23dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="11dp"
         android:layout_marginTop="14dp">
 
 

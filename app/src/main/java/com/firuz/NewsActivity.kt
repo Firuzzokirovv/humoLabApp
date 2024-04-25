@@ -3,16 +3,10 @@ package com.firuz
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.LinearLayout
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
-import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.StaggeredGridLayoutManager
+import com.firuz.profile.ProfileActivity
 import com.firuz.humolabapp.R
-import com.firuz.second.second_activity
 
 class NewsActivity : AppCompatActivity() {
 
