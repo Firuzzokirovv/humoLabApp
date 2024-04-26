@@ -6,6 +6,7 @@
     android:layout_marginVertical="4dp">
 
     <LinearLayout
+        android:id="@+id/transfer_card_item_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -28,5 +29,5 @@
             android:textColor="#171717"
             android:textSize="16sp"
             android:textStyle="bold" />
-</LinearLayout>
+    </LinearLayout>
 </LinearLayout>
