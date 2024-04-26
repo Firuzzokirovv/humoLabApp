@@ -7,4 +7,13 @@
     <color name="daily_task_color_3">#479696</color>
     <color name="profile_color">#595085</color>
     <color name="profile_StrongSide_color">#479696</color>
+    <color name="color_profile_my_report">
+        <color name="item1">#403572</color>
+        <color name="item2">#FF5D50</color>
+        <color name="item3">#479696</color>
+        <color name="item4">#C93F8D</color>
+    </color>
+
+
+
 </resources>

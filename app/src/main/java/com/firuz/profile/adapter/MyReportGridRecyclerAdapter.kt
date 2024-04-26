@@ -1,5 +1,6 @@
 package com.firuz.profile.adapter
 
+import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -33,10 +34,14 @@ class MyReportGridRecyclerAdapter(private var itemModel: List<MyReportModel>) : 
             holder.image.setImageResource(item.image)
             holder.title.text = item.title
             holder.subtitle.text = item.subtitle
-
             if(item.isFavorite){
+                holder.icon.visibility = View.VISIBLE
                 holder.icon.setImageResource(item.icon)
             }
+            else{
+                holder.icon.visibility = View.GONE
+            }
+
         } else { throw Exception("$item") }
     }
 

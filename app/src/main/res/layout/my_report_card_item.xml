@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <androidx.cardview.widget.CardView
         android:layout_marginTop="8dp"
@@ -25,7 +25,7 @@
                 android:layout_marginStart="19dp"
                 android:layout_marginTop="19dp"
                 android:src="@drawable/ic_user"
-                app:tint="#3D3270" />
+                app:tint="@color/profile_color" />
 
             <ImageView
                 android:id="@+id/my_report_icon"
@@ -34,7 +34,8 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="19dp"
-                android:src="@drawable/ic_vector" />
+                android:src="@drawable/ic_vector"
+                app:tint="@color/profile_color"/>
 
             <TextView
                 android:id="@+id/my_report_title"
