@@ -17,6 +17,12 @@ class HumTransferAdapter(private var itemData: List<ItemData>) : RecyclerView.Ad
         val countryName: TextView = view.findViewById(R.id.hum_transfer_countryName)
     }
 
+    fun setFilteredList(itemData: List<ItemData>){
+        this.itemData = itemData
+        notifyDataSetChanged()
+
+    }
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.layout_hum_transfer_card_item,parent,false)
         return HumTransferViewHolder(view)

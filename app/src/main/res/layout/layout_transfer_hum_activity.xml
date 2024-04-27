@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    android:background="#F5F5F5">
+    android:background="#F5F5F5"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,11 +15,11 @@
         android:orientation="vertical">
 
         <ImageButton
-            android:background="#F5F5F5"
             android:id="@+id/btn_back"
-            android:src="@drawable/ic_back"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:background="#F5F5F5"
+            android:src="@drawable/ic_back" />
 
         <TextView
             android:text="Переводы зарубеж"
@@ -32,7 +32,7 @@
     </LinearLayout>
 
 
-    <androidx.cardview.widget.CardView
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
@@ -40,14 +40,14 @@
         app:cardCornerRadius="16dp">
 
         <SearchView
-            android:id="@+id/searchView"
+            android:id="@+id/id_searchView_hum_transfer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:queryHint="Search Country..."
-            app:iconifiedByDefault="false"/>
+            android:queryHint="Поиск стран..."
+            app:iconifiedByDefault="false"
+            android:background="@null"/>
 
-    </androidx.cardview.widget.CardView>
+    </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
         android:orientation="vertical"
